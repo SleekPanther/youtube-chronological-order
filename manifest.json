@@ -1,0 +1,30 @@
+{
+	"manifest_version": 2,
+	
+	"name": "YouTube Chronological Order",
+	"description": "Watch YouTube videos in chronological order from any channel",
+	"version": "0.1.0",
+	"version_name": "0.1.0", 
+
+	"browser_action": {
+		// "default_icon": "assets/icons/icon.png",
+		"default_title": "Watch videos in chronological order"
+	},
+	"permissions": [
+		"activeTab",
+		"tabs"
+	], 
+	"background": {
+		"scripts": [
+			"background.js"
+		]
+	},
+	"commands": {
+		"appendToUrl": {
+			"suggested_key": {
+				"default": "Alt+P"
+			},
+			"description": "Watch all videos from channel in chronological order"
+		}
+	}
+}
