@@ -3,12 +3,12 @@
 	
 	"name": "YouTube Chronological Order",
 	"description": "Watch YouTube videos in chronological order from any channel",
-	"version": "0.1.0",
-	"version_name": "0.1.0", 
+	"version": "0.2.0",
+	"version_name": "0.2.0", 
 
 	"browser_action": {
 		// "default_icon": "assets/icons/icon.png",
-		"default_title": "Watch videos in chronological order"
+		"default_title": "(Alt+P) Watch channel videos in chronological order"
 	},
 	"permissions": [
 		"activeTab",

@@ -1,1 +1,1 @@
-# youtube-chronological-order
+YouTube Chronological Order Chrome Extension
