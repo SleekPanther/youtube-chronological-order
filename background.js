@@ -30,7 +30,11 @@ function appendToUrl(){
 	chrome.tabs.query({'active': true, 'lastFocusedWindow': true}, tabs=>{
 		let currentTab = tabs[0]
 		let oldURL = currentTab.url
-		let videoId = oldURL.match(regexMatchVideoId)[1]	//get video id
+		let regexMatch = oldURL.match(regexMatchVideoId)
+		if(!regexMatch){	//not a valid youtube video URL (prevents keyboard shotcut override)
+			return
+		}
+		let videoId = regexMatch[1]	//get video id
 		let newUrl = YOUTUBE_VIDEO_URL_START + videoId + MAGIC_URL_POSTFIX
 		chrome.tabs.update(currentTab.id, {url: newUrl})	//update tab/reloads page with new location
 	})
