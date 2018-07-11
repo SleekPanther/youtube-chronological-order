@@ -2,13 +2,13 @@
 	"manifest_version": 2,
 	
 	"name": "YouTube Chronological Order",
-	"description": "Watch YouTube videos in chronological order from any channel",
-	"version": "0.4.0",
-	"version_name": "0.4.0", 
+	"description": "Watch all videos from a channel in chronological order",
+	"version": "1.0.0",
+	"version_name": "1.0.0", 
 
 	"page_action": {
-		// "default_icon": "assets/icons/icon.png",
-		"default_title": "(Alt+P) Watch channel videos in chronological order"
+		"default_icon" : "assets/icons/chronological-icon-16.png",
+		"default_title": "Alt+P (Create oldest to newest playlist)"
 	},
 	"permissions": [
 		"declarativeContent", 
@@ -26,7 +26,12 @@
 			"suggested_key": {
 				"default": "Alt+P"
 			},
-			"description": "Watch all videos from channel in chronological order"
+			"description": "Create oldest to newest playlist"
 		}
+	},
+	"icons" : {
+		"16" : "assets/icons/chronological-icon-16.png", 
+		"48" : "assets/icons/chronological-icon-48.png", 
+		"128": "assets/icons/chronological-icon-128.png"
 	}
 }
