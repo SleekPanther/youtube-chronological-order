@@ -1,6 +1,6 @@
 # YouTube Chronological Order (Chrome Extension)
-Watch all videos from a channel in chronological order (oldest to newest)  
-Intended to help you binge all the videos from a channel oldest to newest easily & simply
+Watch all videos from a channel in chronological order (oldest to newest).  
+Intended to help you binge all the videos from a channel oldest to newest easily & simply.
 
 ## [Get Extension from Chrome Web Store](https://chrome.google.com/webstore/detail/youtube-chronological-ord/bbceafimilifndeinlddcbfocipebfek)
 
@@ -12,9 +12,7 @@ Intended to help you binge all the videos from a channel oldest to newest easily
 ## The Solution
 This extension magically finds that use playlist & can play all videos from a channel without opening new tabs
 
-<!--
-embed video
--->
+### [Video Demo](https://www.youtube.com/watch?v=EZhDFZTjgU0)
 
 1) Go to the Videos tab of a channel  
 2) Sort by "Date added (oldest)"  
