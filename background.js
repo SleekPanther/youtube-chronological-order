@@ -1,5 +1,5 @@
 //Only make extension icon visible on YouTube.com
-const youtubeDomainMatch = 'youtube.com'	//lowercase matters
+const youtubeVideoWatchPageUrl = 'youtube.com/watch?v='		//lowercase matters
 chrome.runtime.onInstalled.addListener(function() {
 	// Replace all rules ...
 	chrome.declarativeContent.onPageChanged.removeRules(undefined, () => {
@@ -7,7 +7,7 @@ chrome.runtime.onInstalled.addListener(function() {
 		chrome.declarativeContent.onPageChanged.addRules([{
 			conditions: [
 				new chrome.declarativeContent.PageStateMatcher({
-					pageUrl: { hostContains: youtubeDomainMatch },
+					pageUrl: { urlContains: youtubeVideoWatchPageUrl },
 				})
 			],
 			// And shows the extension's page action
@@ -17,9 +17,10 @@ chrome.runtime.onInstalled.addListener(function() {
 })
 
 
-const MAGIC_URL_POSTFIX = '&list=ULcxqQ59vzyTk'		//thing to append to make it play chronlogically
-const YOUTUBE_VIDEO_URL_START = 'https://www.youtube.com/watch?v='	//a youtube url without the videoID
-const regexToExtractVideoId = /youtube.com\/watch\?v=([^&\?]*)/i		//regular expression matches youtube.com/watch?v=[VIDEO_ID]	& captures the video ID since the ID is either the end of the string or ends at a question mark or ampersand
+const urlPrerfix = 'https://www.'
+const YOUTUBE_VIDEO_URL_START = urlPrerfix + youtubeVideoWatchPageUrl	//a youtube url WITHOUT the videoID
+const regexToExtractVideoId = /youtube.com\/watch\?v=([^&\?]*)/i		//case insensitive regular expression matches youtube.com/watch?v=[VIDEO_ID]	& captures the video ID since the ID is either the end of the string or ends at a question mark or ampersand
+const MAGIC_URL_POSTFIX = '&list=ULcxqQ59vzyTk'		//thing to append to make it play chronologically
 
 //Run code on page action instead of popup
 chrome.pageAction.onClicked.addListener(tab=>{
@@ -31,7 +32,7 @@ function appendToUrl(){
 		let currentTab = tabs[0]
 		let oldURL = currentTab.url
 		let regexMatch = oldURL.match(regexToExtractVideoId)
-		if(!regexMatch){	//not a valid youtube video URL (prevents keyboard shotcut override)
+		if(!regexMatch){	//not a valid youtube video URL (prevents keyboard shortcut override)
 			return
 		}
 		let videoId = regexMatch[1]		//get video id from regex match
