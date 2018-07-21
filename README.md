@@ -12,7 +12,9 @@ Intended to help you binge all the videos from a channel oldest to newest easily
 ## The Solution
 This extension magically finds that use playlist & can play all videos from a channel without opening new tabs
 
-### [Video Demo](https://www.youtube.com/watch?v=EZhDFZTjgU0)
+### [Video Demo](https://www.youtube.com/watch?v=-XNrj6W3nKI)
+<a href='https://www.youtube.com/watch?v=-XNrj6W3nKI'>![](images/github/youtube-embed.png)</a>
+
 
 1) Go to the Videos tab of a channel  
 2) Sort by "Date added (oldest)"  
