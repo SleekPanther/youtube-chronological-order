@@ -3,8 +3,8 @@
 	
 	"name": "YouTube Chronological Order",
 	"description": "Watch all videos from a channel in chronological order",
-	"version": "1.0.2",
-	"version_name": "1.0.2", 
+	"version": "1.0.3",
+	"version_name": "1.0.3", 
 
 	"page_action": {
 		"default_icon" : "assets/icons/chronological-icon-16.png",
