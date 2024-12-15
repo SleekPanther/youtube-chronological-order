@@ -2,7 +2,7 @@
 Watch all videos from a channel in chronological order (oldest to newest).  
 Intended to help you binge all the videos from a channel oldest to newest easily & simply.
 
-## [Get Extension from Chrome Web Store](https://chrome.google.com/webstore/detail/youtube-chronological-ord/bbceafimilifndeinlddcbfocipebfek)
+## [Get Extension from Chrome Web Store](https://chromewebstore.google.com/detail/youtube-in-chronological/likeljjmiochlphehgopfhnadgedabfd)
 
 ## The Problem
 - You need to watch all the videos from a cool new channel you just found, but they have tons of videos
